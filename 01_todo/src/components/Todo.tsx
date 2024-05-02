@@ -32,7 +32,7 @@ const Todo = () => {
         </div>
       </div>
       <div className="col-start-3 col-span-9 w-[66%]">
-        <div className="bg-todoColor rounded-xl p-2 flex flex-row justify-between">
+        <div className="bg-gradient-to-b from-secondaryColor to-todoColor rounded-xl p-2 flex flex-row justify-between hover:from-todoColor hover:to-secondaryColor">
           <div className="flex gap-5 text-primaryColor">
             <input id="todo" type="radio" name="todos" />
             <label htmlFor="todo">Do that</label>
