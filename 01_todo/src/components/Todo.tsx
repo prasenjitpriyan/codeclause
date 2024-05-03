@@ -1,4 +1,5 @@
 import { MdDeleteForever } from "react-icons/md";
+import { FaEdit } from "react-icons/fa";
 
 interface TodoCountTypes {
   id: number;
@@ -35,7 +36,10 @@ const Todo = () => {
             <input id="todo" type="radio" name="todos" />
             <label htmlFor="todo">Do that</label>
           </div>
-          <div className="flex text-center text-primaryColor text-2xl">
+          <div className="flex flex-row text-center text-primaryColor text-2xl gap-5">
+            <button>
+              <FaEdit />
+            </button>
             <button>
               <MdDeleteForever />
             </button>
