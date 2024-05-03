@@ -1,14 +1,14 @@
-import React from "react";
 import "./App.css";
 import Headers from "./components/Headers";
 import Todo from "./components/Todo";
+import TodoProvider from "./context/todoContext";
 
 function App() {
   return (
-    <React.Fragment>
+    <TodoProvider>
       <Headers />
       <Todo />
-    </React.Fragment>
+    </TodoProvider>
   );
 }
 
