@@ -8,7 +8,7 @@ const Todos: React.FC = () => {
       <div className="col-span-1 md:col-span-3">
         <TodoCount />
       </div>
-      <div className="col-span-2 md:col-span-5">
+      <div className="col-span-1 md:col-span-5">
         <Todo />
       </div>
     </section>
