@@ -9,11 +9,7 @@ const Todos: React.FC = () => {
         <TodoCount />
       </div>
       <div className="col-start-3 col-span-9 w-[66%]">
-        <ul>
-          <li className="pb-2">
-            <Todo />
-          </li>
-        </ul>
+        <Todo />
       </div>
     </section>
   );

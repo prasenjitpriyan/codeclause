@@ -22,7 +22,7 @@ const AddTodo: React.FC = () => {
   return (
     <header className="h-[25svh] bg-secondaryColor w-full flex flex-col justify-evenly items-center">
       <h1 className="text-4xl text-primaryColor font-bold">Today</h1>
-      <form className="flex flex-row justify-evenly items-center gap-5">
+      <div className="flex flex-row justify-evenly items-center gap-5">
         <div>
           <label htmlFor="search"></label>
           <input
@@ -40,7 +40,7 @@ const AddTodo: React.FC = () => {
         >
           Add Task
         </button>
-      </form>
+      </div>
     </header>
   );
 };
