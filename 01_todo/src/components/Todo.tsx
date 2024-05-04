@@ -39,7 +39,7 @@ const Todo: React.FC = () => {
                         ? () => removeTodo(todo.id)
                         : () => markDone(todo.id)
                     }
-                    className={todo.isCompleted ? "complete" : ""}
+                    className={todo.isCompleted ? "text-shortColor" : ""}
                   >
                     {todo.isCompleted ? <MdDeleteForever /> : <IoIosRadio />}
                   </button>
