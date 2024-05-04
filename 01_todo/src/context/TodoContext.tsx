@@ -1,4 +1,10 @@
-import { createContext, Dispatch, ReactNode, useReducer } from "react";
+import {
+  createContext,
+  Dispatch,
+  ReactNode,
+  useContext,
+  useReducer,
+} from "react";
 import reducer from "./TodoReducer";
 
 // Initial State
@@ -44,4 +50,9 @@ export const GlobalContextProvider = ({
       {children}
     </globalContext.Provider>
   );
+};
+
+export const useGlobalContext: ContextHook = () => {
+  const { state, dispatch } = useContext(globalContext);
+  return { state, dispatch };
 };

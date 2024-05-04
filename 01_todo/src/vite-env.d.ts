@@ -18,3 +18,8 @@ interface Action {
 }
 
 type ReducerType = (state: State, action: Action) => State;
+
+type ContextHook = () => {
+  state: State;
+  dispatch: (action: Action) => void;
+};
