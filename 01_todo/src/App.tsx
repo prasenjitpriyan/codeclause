@@ -1,14 +1,14 @@
 import "./App.css";
-import React from "react";
 import AddTodo from "./components/AddTodo";
 import Todos from "./containers/Todos";
+import { GlobalContextProvider } from "./context/TodoContext";
 
 function App() {
   return (
-    <React.Fragment>
+    <GlobalContextProvider>
       <AddTodo />
       <Todos />
-    </React.Fragment>
+    </GlobalContextProvider>
   );
 }
 
