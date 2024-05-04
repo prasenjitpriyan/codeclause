@@ -4,11 +4,11 @@ import TodoCount from "../components/TodoCount";
 
 const Todos: React.FC = () => {
   return (
-    <section className="min-h-[75svh] grid grid-col-12 gap-5 p-5">
-      <div className="col-start-1 col-span-1">
+    <section className="grid grid-cols-1 gap-5 p-5 md:grid-cols-8">
+      <div className="col-span-1 md:col-span-3">
         <TodoCount />
       </div>
-      <div className="col-start-3 col-span-9 w-[66%]">
+      <div className="col-span-2 md:col-span-5">
         <Todo />
       </div>
     </section>

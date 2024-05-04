@@ -9,7 +9,6 @@ interface TodoCountTypes {
 
 const TodoCount: React.FC = () => {
   const { state } = useGlobalContext();
-  console.log(state);
 
   let total = state.todos.length;
   let remaining = state.todos.filter(
