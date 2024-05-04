@@ -26,7 +26,7 @@ const Todo: React.FC = () => {
         {state.todos
           .sort((a, b) => b.id - a.id)
           .map((todo) => (
-            <li className="pb-2">
+            <li className="pb-2" key={todo.id}>
               <div className="bg-gradient-to-b from-secondaryColor to-todoColor rounded-xl p-2 flex flex-row justify-between hover:from-todoColor hover:to-secondaryColor">
                 <div className="flex gap-5 text-primaryColor">
                   <p>{todo.title}</p>
