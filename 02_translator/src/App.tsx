@@ -1,11 +1,11 @@
 import React, { FC } from "react";
 import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
-import About from "./components/About";
-import Home from "./components/Home";
-import Pricing from "./components/Pricing";
-import DownloadApp from "./components/DownloadApp";
-import Contact from "./components/Contact";
+import About from "./pages/About";
+import Home from "./pages/Home";
+import Pricing from "./pages/Pricing";
+import DownloadApp from "./pages/DownloadApp";
+import Contact from "./pages/Contact";
 
 const App: FC = () => {
   return (
