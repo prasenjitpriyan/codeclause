@@ -20,12 +20,12 @@ const Navbar: FC = () => {
   const location = useLocation();
 
   return (
-    <header className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-5 p-5">
-      <div>
-        <img src={logo} alt="Logo" className="w-[50px]" />
+    <header className="p-5 grid sm:grid-cols-12 gap-5">
+      <div className="sm:col-span-2 flex justify-center sm:justify-start">
+        <img src={logo} alt="Logo" className="w-[30px] sm:w-[50px]" />
       </div>
-      <nav className="flex justify-center items-center">
-        <div className="flex flex-row justify-between gap-10">
+      <div className="flex justify-evenly sm:col-span-7">
+        <div className="flex gap-2 sm:gap-4 lg:gap-6 xl:gap-8 2xl:gap-10 justify-evenly items-center text-[14px] sm:text-[18px]">
           {links.map(({ id, link, name }) => (
             <Link
               key={id}
@@ -40,14 +40,13 @@ const Navbar: FC = () => {
             </Link>
           ))}
         </div>
-      </nav>
-      <div className="flex flex-row justify-end gap-5">
-        <button className="bg-gradient-to-r from-[#8A66D9] via-[#4054C0] to-[#134DB1] p-3 rounded-xl text-white w-40 hover:bg-gradient-to-l">
-          Sign In
-        </button>
-        <button className="bg-gradient-to-r from-[#F2CB57] via-[#F29C50] to-[#F2884B] p-3 rounded-xl text-white w-40 hover:bg-gradient-to-l">
-          Sign Up
-        </button>
+      </div>
+      <div className="sm:col-span-3">
+        <div className="flex justify-center sm:justify-end">
+          <button className="bg-gradient-to-r from-[#F2CB57] via-[#F29C50] to-[#F2884B] p-1 sm:p-3 rounded-xl text-white w-32 hover:bg-gradient-to-l">
+            Sign In
+          </button>
+        </div>
       </div>
     </header>
   );
