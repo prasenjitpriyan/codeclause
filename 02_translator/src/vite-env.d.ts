@@ -5,3 +5,10 @@ export interface Linktype {
   link: string;
   name: string;
 }
+
+export interface TranslateButtonType {
+  id: number;
+  src: string;
+  className: string;
+  text: string;
+}
