@@ -1,9 +1,0 @@
-.clip-circle {
-  clip-path: circle(50% at 50% 0);
-}
-.clip-circle2 {
-  clip-path: circle(50% at 50% 100%);
-}
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
